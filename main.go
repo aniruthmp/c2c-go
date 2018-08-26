@@ -36,7 +36,7 @@ func java(w http.ResponseWriter, r *http.Request) {
 }
 
 func php(w http.ResponseWriter, r *http.Request) {
-	response, err := http.Get("http://c2c-java.apps.internal:8080/php")
+	response, err := http.Get("http://c2c-java.apps.internal:8080/demo")
 	if err != nil {
 		fmt.Printf("The HTTP request failed with error %s\n", err)
 	} else {
