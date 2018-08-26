@@ -1,0 +1,10 @@
+---
+applications:
+- name: c2c-go
+  buildpacks:
+  - go_buildpack
+  memory: 256M
+  instances: 1
+  env:
+    GOPACKAGENAME: github.com/aniruthmp/c2c-go
+    GOVERSION: go1.10.3
