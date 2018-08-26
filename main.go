@@ -31,8 +31,8 @@ func java(w http.ResponseWriter, r *http.Request) {
 	} else {
 		data, _ := ioutil.ReadAll(response.Body)
 		fmt.Println(string(data))
+		json.NewEncoder(w).Encode(string(data))
 	}
-	json.NewEncoder(w).Encode(response.Body)
 }
 
 func php(w http.ResponseWriter, r *http.Request) {
@@ -42,8 +42,8 @@ func php(w http.ResponseWriter, r *http.Request) {
 	} else {
 		data, _ := ioutil.ReadAll(response.Body)
 		fmt.Println(string(data))
+		json.NewEncoder(w).Encode(string(data))
 	}
-	json.NewEncoder(w).Encode(response.Body)
 }
 
 func demo(w http.ResponseWriter, r *http.Request) {
@@ -53,6 +53,6 @@ func demo(w http.ResponseWriter, r *http.Request) {
 	} else {
 		data, _ := ioutil.ReadAll(response.Body)
 		fmt.Println(string(data))
+		json.NewEncoder(w).Encode(string(data))
 	}
-	json.NewEncoder(w).Encode(response.Body)
 }
